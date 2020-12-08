@@ -1,0 +1,16 @@
+#ecran {
+    background: black;
+    color: #7f7;
+    text-align: right;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px;
+    font-size: 1.2em;
+}
+.btn {
+    width: 60px;
+    height: 60px;
+}
+.gbtn {
+    width: 100%; /*afin que les boutons 0 et = prennent toute la largeur*/
+}
