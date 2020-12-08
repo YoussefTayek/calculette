@@ -1,6 +1,6 @@
 
 function calculer(g, v) {
-   // console.log(g,v);
+   
    const ecran = document.querySelector('#ecran');
   
    switch (g) {
@@ -18,7 +18,8 @@ function calculer(g, v) {
     case "op":
          operande1 = ecran.value;
          operator = v; 
-         ecran.value = '';
+        // ecran.value = '';
+        ecran.value += v
       break;
     case "eg":
         switch (operator) {
@@ -28,7 +29,7 @@ function calculer(g, v) {
             break;
             
             case "+" :
-                 ecran.value = parseInt(operande1)+parseInt(ecran.value) ;
+                 ecran.value = parseFloat(operande1)+parseFloat(ecran.value) ;
             break;
             
             case "x" :
